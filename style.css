@@ -1,0 +1,138 @@
+/* Full-page background image that scrolls */
+body {
+  background-image: url('Background/BackGround.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Transparent header */
+header {
+  padding: 10px 0;
+  background-color: transparent;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header .logo {
+  height: 100px;
+  width: 100px;
+  background: none;
+}
+
+/* Mobile-responsive navigation */
+nav ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav .nav-item {
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+/* Adjust button size and padding */
+nav .nav-link {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+/* Login form background with scrolling */
+.login-wrapper {
+  background-image: url('Background/LoginForm.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Responsive Login Wrapper */
+.login-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Semi-transparent form background */
+.content-wrapper {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Flex container for centering form */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  nav .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Adjust container on smaller screens */
+  .content-wrapper {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .login-wrapper {
+    padding: 20px;
+  }
+
+  footer {
+    position: relative;
+    /* Ensure footer isn't sticky on mobile */
+    bottom: 0;
+  }
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

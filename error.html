@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        /*======================
+            404 page
+        =======================*/
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+            /* Fade-in effect for the whole page */
+        }
+
+        .page_404 {
+            padding: 40px 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: bounce 1s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Center-align content */
+            justify-content: center;
+            /* Center-align content */
+            gap: 20px;
+            /* Space between elements */
+        }
+
+        .four_zero_four_bg {
+            background-image: url('Project/dribbble_1.gif');
+            height: 200px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 8px;
+            width: 100%;
+            /* Ensure full width */
+        }
+
+        .four_zero_four_bg h1 {
+            font-size: 80px;
+            color: #d32f2f;
+            /* Red color */
+            margin: 20px 0 0;
+        }
+
+        .four_zero_four_bg h3 {
+            font-size: 24px;
+            color: #616161;
+            /* Gray color */
+            margin: 0;
+            /* Remove margin for better spacing */
+            animation: slideIn 0.5s ease-in-out;
+            /* Animation for the subheading */
+        }
+
+        .contant_box_404 {
+            margin-top: 20px;
+        }
+
+        .contant_box_404 p {
+            font-size: 18px;
+            color: #757575;
+            /* Dark gray color */
+            margin: 0;
+            /* Remove margin for better spacing */
+            animation: fadeIn 0.5s ease-in-out 0.5s;
+            /* Fade-in effect for the paragraph */
+        }
+
+        .link_404 {
+            display: inline-block;
+            color: #fff !important;
+            padding: 10px 20px;
+            background: #39ac31;
+            /* Green color */
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+            animation: fadeIn 0.5s ease-in-out 1s;
+            /* Fade-in effect for the link */
+        }
+
+        .link_404:hover {
+            background: #32a852;
+            /* Darker green on hover */
+        }
+
+        @media (max-width: 600px) {
+            .four_zero_four_bg h1 {
+                font-size: 60px;
+            }
+
+            .four_zero_four_bg h3 {
+                font-size: 20px;
+            }
+
+            .contant_box_404 p {
+                font-size: 16px;
+            }
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="page_404">
+        <div class="four_zero_four_bg">
+            <h3 style="margin: 0%;"> Error 404</h1>
+        </div>
+        <div class="contant_box_404">
+            <h3>Looks like you're lost</h3>
+            <p>The page you are looking for is not available!</p>
+            <a href="gallery.html" class="link_404">Go to Back</a>
+        </div>
+    </section>
+</body>
+
+</html>
